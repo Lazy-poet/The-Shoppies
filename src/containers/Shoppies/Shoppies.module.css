@@ -1,0 +1,11 @@
+.Shoppies{
+text-align: center;
+padding: 20px;
+}
+.Shoppies div.TopBar{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}

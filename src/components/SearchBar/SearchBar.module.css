@@ -1,0 +1,22 @@
+.Form{
+ width: 170px !important;
+ border: 0px solid black;
+ position: relative;
+ align-self: center;
+}
+.Form Input{
+ width: 100% !important;
+height: 40px;
+
+}
+
+.Form Button{
+  width: 60px !important;
+  position: absolute;
+  right: 0px;
+  outline: none;
+  border: none;
+  height: 40px;
+  font-size: .8rem;
+  text-align: center
+}
