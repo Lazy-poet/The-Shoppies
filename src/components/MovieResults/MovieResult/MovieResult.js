@@ -54,6 +54,7 @@ class MovieResult extends Component{
    }
  }
 render(){
+
   const nominated= this.props.list.some(item=> this.props.results.includes(item));
   console.log(nominated)
  const disabled = {}
@@ -70,9 +71,10 @@ render(){
           <CardTitle tag="h5">{this.props.title}</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">{this.props.year}</CardSubtitle>
         <Button 
-        disabled={this.state.disabled}
+        {...disabled}
         onClick={()=>this.handleClick(this.props.id, this.props.movie)}
-        color={this.state.nominated ? "danger" : "success"}
+        color={this.state.nominated ? "success" : "success"}
+       // color={nominated ? "danger" : "success"}
         >
          {this.state.nominated ? 'Nominated' : 'Nominate'}
           </Button>

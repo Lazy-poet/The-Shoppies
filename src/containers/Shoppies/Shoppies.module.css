@@ -2,6 +2,11 @@
 text-align: center;
 padding: 20px;
 }
+/* .Shoppies div.Nav{
+  position: fixed; 
+  top: 0;
+  width: 100%
+} */
 .Shoppies div.TopBar{
   display: flex;
   align-items:center;
