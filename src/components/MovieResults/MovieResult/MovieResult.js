@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap'
 import classes from './MovieResult.module.css';
-import NominationList from '../../Nominations/NominationList/NominationList';
 
 class MovieResult extends Component{
   state={
