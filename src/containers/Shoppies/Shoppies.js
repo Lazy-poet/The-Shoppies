@@ -5,6 +5,7 @@ import Nominations from '../../components/Nominations/Nominations'
 import MovieResults from '../../components/MovieResults/MovieResults'
 import classes from './Shoppies.module.css'
 import {Navbar} from 'reactstrap'
+
 export default class Shoppies extends Component {
   state = {
     input: '',
@@ -12,6 +13,7 @@ export default class Shoppies extends Component {
     loading: false,
     list: []
   }
+  
   fetchMovies = async () => {
     this.setState({ loading: true });
     let title = this.state.input
@@ -38,7 +40,7 @@ export default class Shoppies extends Component {
       return result.imdbID === id
     })
 
-    if (index == -1) {
+    if (index === -1) {
       const list = [...this.state.list, newMovie]
 
       this.setState({
