@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Button } from 'reactstrap'
+import { Form, Input } from 'reactstrap'
 import classes from './SearchBar.module.css'
 const searchBar = (props) => {
   return (
@@ -10,7 +10,6 @@ const searchBar = (props) => {
       onChange={props.changed}
       placeholder="Search movies..."
       />
-      {/* <Button onClick={props.click}>Search</Button> */}
     </Form>
   );
 };

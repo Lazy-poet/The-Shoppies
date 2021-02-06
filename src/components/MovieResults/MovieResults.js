@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import MovieResult from './MovieResult/MovieResult';
-import {Table, Button} from 'reactstrap';
-import NominationList from "../Nominations/NominationList/NominationList"
 import classes from './MovieResults.module.css'
 
 class MovieResults extends Component {
@@ -10,20 +8,7 @@ class MovieResults extends Component {
     list: [],
     nominiated: false
   }
-  // handleClick =(id) =>{
-  //   const list = [...this.state.list, id]
-  //   this.setState({
-  //     nominated: true,
-  //     list: list
-  //   })
-   
-
-  //   console.log(this.state.list)
-  //   console.log(list)
-  //   console.log(id)
-  //   //this.handleNomination(id)
-  //   //console.log(this.state.results)
-  // }
+  
   showMovieHandler = (movie)=>{
     return <MovieResult 
     title = {movie.Title}
